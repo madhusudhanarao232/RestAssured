@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Interview_RestAssured.SpecBuilder">
+      <class name="FrameWork.Create_project_WithPOM">
         <methods>
-          <include name="specBuilder"/>
+          <include name="closeTheBrowser"/>
+          <include name="createProjectWithPOM"/>
+          <include name="loginToApplication"/>
+          <include name="logoutFromApplication"/>
+          <include name="lanchBrowser"/>
+          <include name="connectToDB"/>
+          <include name="closeConnectionToDB"/>
         </methods>
-      </class> <!-- Interview_RestAssured.SpecBuilder -->
+      </class> <!-- FrameWork.Create_project_WithPOM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

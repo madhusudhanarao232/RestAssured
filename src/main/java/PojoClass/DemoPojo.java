@@ -2,10 +2,10 @@ package PojoClass;
 
 public class DemoPojo {
 	/* Declaration */
-		String  createdBy;
-		String   projectName;
-		String   status;
-		 int  teamSize;
+	private String  createdBy;
+	private String   projectName;
+	private String   status;
+	private int  teamSize;
 		
 		 /* Initialization */
 		public DemoPojo(String createdBy, String projectName, String status, int teamSize) {

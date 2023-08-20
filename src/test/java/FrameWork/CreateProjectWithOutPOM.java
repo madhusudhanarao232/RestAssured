@@ -31,10 +31,8 @@ public class CreateProjectWithOutPOM extends BaseClass{
 		
 		System.out.println("ExpData ---->"+expdata);
 		
-		String query = "select * from project";
-		
+		String query = "select * from project";	
 		String actdata = dlib.executeQuerryAndVerify(query, 1, expdata);
-		
 		Assert.assertEquals(expdata, actdata);
 		System.out.println("---------------<   TC PASSED  >------------");
 		resp.then().log().all();

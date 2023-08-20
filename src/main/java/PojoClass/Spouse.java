@@ -1,9 +1,9 @@
 package PojoClass;
 
 public class Spouse {
- String name;
- int age;
- long phno[];
+ private String name;
+ private int age;
+ private long phno[];
  
  public Spouse() {}
 

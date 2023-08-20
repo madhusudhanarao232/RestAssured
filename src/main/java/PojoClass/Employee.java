@@ -2,11 +2,11 @@ package PojoClass;
 
 public class Employee {
 	//Declaration
- String name;
- String Eid;
- String email;
- int age;
- long phno;
+	private String name;
+	private String Eid;
+	private String email;
+	private int age;
+	private long phno;
  // initialization in Constructor 
  
  public Employee() {} // No args Constructor

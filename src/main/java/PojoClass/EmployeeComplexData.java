@@ -3,11 +3,11 @@ package PojoClass;
 public class EmployeeComplexData {
 
 	//Declaration
-	 String name;
-	 String Eid;
-	 String []email;
-	 int age;
-	 long[] phno;
+	private String name;
+	private String Eid;
+	private String []email;
+	private int age;
+	private long[] phno;
 	 // initialization in Constructor 
 	 
 	 public EmployeeComplexData() {} // No args Constructor

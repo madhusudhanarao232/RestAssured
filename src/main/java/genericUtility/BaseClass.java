@@ -2,11 +2,8 @@ package genericUtility;
 
 import java.sql.SQLException;
 
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -17,7 +14,6 @@ import org.testng.annotations.BeforeSuite;
 
 import Rmg_POM.HomePage;
 import Rmg_POM.LoginPage;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 public class BaseClass {
@@ -27,8 +23,8 @@ public class BaseClass {
 	public JavaUtility jlib=new JavaUtility();
 	public RestAssuredLibrary rlib=new RestAssuredLibrary();
 	public WebActionUtility w=new WebActionUtility() ;
-	public String URL=null;
-	//public String BROWSE;
+	//public String URL=null;
+	
 	@BeforeSuite
 	   public void connectToDB() throws SQLException {
 		dlib.connectDB();
@@ -36,9 +32,9 @@ public class BaseClass {
 	}
 	@BeforeClass
 	public void lanchBrowser() throws Throwable {
-		
+		//WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
-		URL=Iconstants.appURI;
+		String URL = Iconstants.appURI;
 		sdriver=driver;
 		w.maximizeTheBrowser(driver); 
 		driver.get(URL);
@@ -59,7 +55,7 @@ public class BaseClass {
 		
 		w.waitForElementInDOM(driver);
 		hp.getLogoutBtn().click();
-		//hp.signOut();
+	
 		Reporter.log("  LOgOuting from the Application ...............",true);
 	}
 	@AfterClass

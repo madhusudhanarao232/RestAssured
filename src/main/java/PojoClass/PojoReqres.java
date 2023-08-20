@@ -3,8 +3,8 @@ package PojoClass;
 public class PojoReqres {
 	/* Declaration */
 	
-	String name;
-	String job;
+	private String name;
+	private String job;
 	/* Initialization */
 	public PojoReqres(String name, String job) {
 		super();

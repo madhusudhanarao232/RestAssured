@@ -2,11 +2,11 @@ package PojoClass;
 
 public class EmpAOB {
 	//Declaration
-		 String name;
-		 String Eid;
-		 String []email;
-		 int age;
-		 long[] phno;
+	private  String name;
+	private  String Eid;
+	private  String []email;
+	private  int age;
+	private  long[] phno;
 		 Spouse spouse;
 		 // initialization in Constructor 
 		 

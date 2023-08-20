@@ -6,6 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
+	 /* Declaration */
+	/* Initialization */
+	/* Utilization */
+	/* Business library */
+	
     /* Declaration */
 	@FindBy(id="usernmae") private WebElement usernameTextBox;
 

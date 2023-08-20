@@ -7,7 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage { 
     // Declaration
-	@FindBy(xpath="//div/descendant::a[text()='Logout']")private WebElement logoutBtn;
+	
+	//div/descendant::a[text()='Logout']
+	
+	@FindBy(xpath="//a[text()='Logout']")private WebElement logoutBtn;
 	
 	@FindBy(xpath="//a[.='Home']")private WebElement hometBtn;
 	

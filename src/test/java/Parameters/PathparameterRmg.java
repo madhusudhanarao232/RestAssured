@@ -15,7 +15,7 @@ public void pathParameter() {
 	
 	given()
 	.pathParam("projectId", "TY_PROJ_24368")
-	
+
 	.when()
 	.get("/projects/{projectId}")
 	
