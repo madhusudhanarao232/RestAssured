@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Interview_RestAssured.HowToKeepTheSencitiveDataOutOfTheLOgTest">
+      <class name="Serialization.EmpSerializationJavaToJson">
         <methods>
-          <include name="sample"/>
+          <include name="complexAOB"/>
         </methods>
-      </class> <!-- Interview_RestAssured.HowToKeepTheSencitiveDataOutOfTheLOgTest -->
+      </class> <!-- Serialization.EmpSerializationJavaToJson -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

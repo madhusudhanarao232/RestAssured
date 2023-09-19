@@ -44,11 +44,21 @@ public class EmpSerializationJavaToJson {
 	
 	@Test
 	public void complexAOB() throws JsonGenerationException, JsonMappingException, IOException {
-		long sph[]= {6304540601l,1234567890l};
-		Spouse s=new Spouse("Mounika", 23, sph);
+		long s1ph[]= {6304540601l,1234567890l};
+		Spouse s1=new Spouse("Mounika", 23, s1ph);
+		long s2ph[]= {6304540601l,1234567890l};
+		Spouse s2=new Spouse("Bhavani",18,s2ph);
+		long s3ph[]= {6304540601l,1234567890l};
+		Spouse s3=new Spouse("Dama",28,s2ph);
+		long s4ph[]= {6304540601l,1234567890l};
+		Spouse s4=new Spouse("Chandini",23,s2ph);
+		long s5ph[]= {6304540601l,1234567890l};
+		Spouse s5=new Spouse("Hyndavi",25,s2ph);
+		
 		String email[]= {"madhu@gamil.com","dande@gamil.com"};
 		long eph[]= {8500321287l,9494689927l};
-		EmpAOB edata=new EmpAOB("MADHUSUDHANA_RAO", "TR557", email, 25, eph, s);
+		Spouse [] s= {s1,s2,s3,s4,s5};
+		EmpAOB edata=new EmpAOB("MADHUSUDHANA_RAO", "TR557", email, 25, eph,s);
 		
 		 ObjectMapper m = new ObjectMapper();
 	      

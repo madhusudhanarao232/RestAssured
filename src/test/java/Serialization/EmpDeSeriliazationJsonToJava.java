@@ -71,9 +71,9 @@ public class EmpDeSeriliazationJsonToJava {
 		System.out.println("Emp Email: "+Arrays.toString(data.getEmail()));
 
 		//Spouse Details
-		System.out.println("Spouse Name: "+data.getspouse().getName());
-		System.out.println("Spouse age: "+data.getspouse().getAge());
-		System.out.println("Spouse phNo: "+Arrays.toString(data.getspouse().getPhno()));
+//		System.out.println("Spouse Name: "+data.getspouse().getName());
+//		System.out.println("Spouse age: "+data.getspouse().getAge());
+//		System.out.println("Spouse phNo: "+Arrays.toString(data.getspouse().getPhno()));
 
 
 		/* to Print Array values One by ONE */

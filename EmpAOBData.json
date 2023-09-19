@@ -3,10 +3,26 @@
   "email" : [ "madhu@gamil.com", "dande@gamil.com" ],
   "age" : 25,
   "phno" : [ 8500321287, 9494689927 ],
-  "spouse" : {
+  "spouse" : [ {
     "name" : "Mounika",
     "age" : 23,
     "phno" : [ 6304540601, 1234567890 ]
-  },
+  }, {
+    "name" : "Bhavani",
+    "age" : 18,
+    "phno" : [ 6304540601, 1234567890 ]
+  }, {
+    "name" : "Dama",
+    "age" : 28,
+    "phno" : [ 6304540601, 1234567890 ]
+  }, {
+    "name" : "Chandini",
+    "age" : 23,
+    "phno" : [ 6304540601, 1234567890 ]
+  }, {
+    "name" : "Hyndavi",
+    "age" : 25,
+    "phno" : [ 6304540601, 1234567890 ]
+  } ],
   "eid" : "TR557"
 }

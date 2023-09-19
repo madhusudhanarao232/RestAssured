@@ -7,12 +7,12 @@ public class EmpAOB {
 	private  String []email;
 	private  int age;
 	private  long[] phno;
-		 Spouse spouse;
+		 Spouse [] spouse;
 		 // initialization in Constructor 
 		 
 		 public EmpAOB() {} // No args Constructor
 		 
-		public EmpAOB(String name, String eid, String []email, int age, long[] phno,Spouse spouse) {
+		public EmpAOB(String name, String eid, String []email, int age, long[] phno,Spouse []spouse) {
 			super();
 			this.name = name;
 			Eid = eid;
@@ -53,11 +53,11 @@ public class EmpAOB {
 			this.phno = phno;
 		}
 
-		public Spouse getspouse() {
+		public Spouse[] getspouse() {
 			return spouse;
 		}
 
-		public void setspouse(Spouse spouse) {
+		public void setspouse(Spouse []spouse) {
 			this.spouse = spouse;
 		}
 

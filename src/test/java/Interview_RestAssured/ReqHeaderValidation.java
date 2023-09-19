@@ -25,7 +25,7 @@ public class ReqHeaderValidation {
 	Response res = when().get("/projects/TY_PROJ_25169");
 	res.then().assertThat()
 	.contentType(ContentType.JSON).log().all();
-	
+	res.getHeader(expected_Connection);
 	res.prettyPeek();
 	
 	String statusLine = res.statusLine();

@@ -71,7 +71,20 @@
                    <artifactId>json-schema-validator</artifactId>
                    <version>5.1.1</version>
                </dependency>
-               
+     <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok 
+     
+       It is used  to run the test cases in cmd line            -->
+               <dependency>
+                   <groupId>org.projectlombok</groupId>
+                   <artifactId>lombok</artifactId>
+                   <version>1.18.22</version>
+               </dependency>
+     <!-- Extent report dependency-->
+               <dependency>
+		       	<groupId>com.aventstack</groupId>
+		       	<artifactId>extentreports</artifactId>
+		       	<version>5.0.9</version>
+		       </dependency>
 		   
 	   </dependencies>
 </project>

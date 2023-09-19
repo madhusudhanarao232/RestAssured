@@ -9,7 +9,7 @@ import io.restassured.config.LogConfig;
 
 import static io.restassured.RestAssured.*;
 
-public class HowToKeepTheSencitiveDataOutOfTheLOgTest {
+public class HowToKeepTheSencitiveDataOutOfTheLog {
   @Test
   public void sample() {
 	  Set<String> headers=new HashSet<String>();
@@ -17,7 +17,7 @@ public class HowToKeepTheSencitiveDataOutOfTheLOgTest {
 	  headers.add("Content-type");
 	  
 	  given()
-	  .baseUri("http://rmgtestingserver:8084")
+	  .baseUri("http://rmgtestingserver:8084/")
 	  .headers("X-REGION","NAM")
 	  // blacklist headers
 	  

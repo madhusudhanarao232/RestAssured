@@ -21,8 +21,8 @@ public class CreatePost {
 	
 	/* step 1: pre conditions */
 	given()
-	.body(jObj)
-	.contentType(ContentType.JSON)
+	.body("{'name': 'Puli-Meka','job':'madhu'}")
+	
 	/* step 2: actions */
 	.when()
 	.post("/api/users")
