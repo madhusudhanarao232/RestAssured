@@ -1,4 +1,4 @@
-package Serialization;
+ package Serialization;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import PojoClass.EmpAOB;
 import PojoClass.Employee;
 import PojoClass.EmployeeComplexData;
+import PojoClass.Spouse;
 
 public class EmpDeSeriliazationJsonToJava {
 
@@ -71,10 +72,15 @@ public class EmpDeSeriliazationJsonToJava {
 		System.out.println("Emp Email: "+Arrays.toString(data.getEmail()));
 
 		//Spouse Details
-//		System.out.println("Spouse Name: "+data.getspouse().getName());
-//		System.out.println("Spouse age: "+data.getspouse().getAge());
-//		System.out.println("Spouse phNo: "+Arrays.toString(data.getspouse().getPhno()));
-
+		for(int i=0;i<data.getspouse().length;i++) {
+		Spouse s = data.getspouse()[i];
+		System.out.println();
+		System.out.println((i+1)+" spouse details");
+		System.out.println();
+		System.out.println("Spouse Name: "+s.getName());
+		System.out.println("Spouse age: "+s.getAge());
+		System.out.println("Spouse phno: "+Arrays.toString(s.getPhno()));
+		}
 
 		/* to Print Array values One by ONE */
 		//	for(int i=0,j=0,k=0;i<data.getEmail().length&&j<data.getPhno().length&&k<data.getPhno().length;i++,j++,k++) {

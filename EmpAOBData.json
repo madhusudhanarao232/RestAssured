@@ -4,23 +4,23 @@
   "age" : 25,
   "phno" : [ 8500321287, 9494689927 ],
   "spouse" : [ {
-    "name" : "Mounika",
+    "name" : "1st spouse",
     "age" : 23,
     "phno" : [ 6304540601, 1234567890 ]
   }, {
-    "name" : "Bhavani",
+    "name" : "2nd spouce",
     "age" : 18,
     "phno" : [ 6304540601, 1234567890 ]
   }, {
-    "name" : "Dama",
+    "name" : "3rd spouse",
     "age" : 28,
     "phno" : [ 6304540601, 1234567890 ]
   }, {
-    "name" : "Chandini",
+    "name" : "5th spouse",
     "age" : 23,
     "phno" : [ 6304540601, 1234567890 ]
   }, {
-    "name" : "Hyndavi",
+    "name" : "6th spouse",
     "age" : 25,
     "phno" : [ 6304540601, 1234567890 ]
   } ],

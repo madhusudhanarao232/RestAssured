@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Serialization.EmpSerializationJavaToJson">
+      <class name="Serialization.EmpDeSeriliazationJsonToJava">
         <methods>
-          <include name="complexAOB"/>
+          <include name="empAOB"/>
         </methods>
-      </class> <!-- Serialization.EmpSerializationJavaToJson -->
+      </class> <!-- Serialization.EmpDeSeriliazationJsonToJava -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
