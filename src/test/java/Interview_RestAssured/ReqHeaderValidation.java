@@ -48,7 +48,7 @@ public class ReqHeaderValidation {
 	
 	String actual_connection = res.getHeader("Connection");
 	Assert.assertEquals(actual_connection, expected_Connection);
-	
+    
 	}
 
 }

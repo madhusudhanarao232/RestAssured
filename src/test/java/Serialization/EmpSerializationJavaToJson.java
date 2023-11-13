@@ -49,11 +49,11 @@ public class EmpSerializationJavaToJson {
 		long s2ph[]= {6304540601l,1234567890l};
 		Spouse s2=new Spouse("2nd spouce",18,s2ph);
 		long s3ph[]= {6304540601l,1234567890l};
-		Spouse s3=new Spouse("3rd spouse",28,s2ph);
+		Spouse s3=new Spouse("3rd spouse",28,s3ph);
 		long s4ph[]= {6304540601l,1234567890l};
-		Spouse s4=new Spouse("5th spouse",23,s2ph);
+		Spouse s4=new Spouse("4th spouse",23,s4ph);
 		long s5ph[]= {6304540601l,1234567890l};
-		Spouse s5=new Spouse("6th spouse",25,s2ph);
+		Spouse s5=new Spouse("5th spouse",25,s5ph);
 		
 		String email[]= {"madhu@gamil.com","dande@gamil.com"};
 		long eph[]= {8500321287l,9494689927l};

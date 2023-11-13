@@ -21,15 +21,15 @@ public class RequestChainingRmg{
 		DemoPojo pojo=new DemoPojo("Optimus Prime", "Transformers_"+jlib.getRandom(), "Complited", 16);
 		/* step 1: pre conditions & Action */
 
-//		Response res = given().body(pojo)  
-//				.contentType(ContentType.JSON).when().post("/addProject");
-//
-//		/* step 2: get ProjectId from The Response */
-//		String pid = res.jsonPath().get("projectId");
-//		Reporter.log("GENERATED ProjectId -------------> "+pid,true);
+		Response res = given().body(pojo)  
+				.contentType(ContentType.JSON).when().post("/addProject");
+
+		/* step 2: get ProjectId from The Response */
+		String pid = res.jsonPath().getString("projectId");
+		Reporter.log("GENERATED ProjectId -------------> "+pid,true);
 		
 		/* step 3: Applying Chaining Concept For GET */
-		String pid="TY_PROJ_005";
+		//String pid="TY_PROJ_005";
 		given().pathParam("id", pid)
 		.when().get("/projects/{id}")
 		.then().assertThat().contentType(ContentType.JSON).log().all();

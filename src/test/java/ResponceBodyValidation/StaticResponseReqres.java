@@ -18,7 +18,7 @@ public class StaticResponseReqres {
 		String expId = "9";
 		baseURI="https://reqres.in";
 		Response res = given().get("/api/users/2");
-		String actId = res.jsonPath().get("data[0].id");
+		String actId = res.jsonPath().getString("data[0].id");
 		res.prettyPeek();
 		SoftAssert sa = new SoftAssert();
 		sa.assertEquals(actId, expId);

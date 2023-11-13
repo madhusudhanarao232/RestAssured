@@ -43,7 +43,7 @@ public class DDTUsingDataProvider {
 		/*pre requests*/
 		given().body(pojo).contentType(ContentType.JSON)
 		.when().post("/addProject")
-.then().assertThat().statusCode(201).contentType(ContentType.JSON).log().all();
+ .then().assertThat().statusCode(201).contentType(ContentType.JSON).log().all();
 		
 	}
 }
