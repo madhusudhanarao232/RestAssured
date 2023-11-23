@@ -46,6 +46,7 @@ public class WriteResponceINJsonFile {
       		File file=new File("src/test/resources/WriteFile/targetFileForByteArray.json");
       		//Writing into files
       		Files.write(resAsByteArray,file);
+     
         
 	}
 }
